@@ -37,17 +37,22 @@ body {
 }
 
 .heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background: lightblue;
   width: 95%;
-  text-align: center;
-  margin: 10px 10px;
+  margin-top: 40px;
   border-radius: inherit;
   position: relative;
-  bottom: 90px;
+  bottom: 40px;
   padding: 10px;
+  height: 70px;
   color: rgba(0, 0, 0, 0.683);
   box-shadow: inset 5px 5px 10px rgb(0, 0, 0, 0.3);
   transition: all 300ms ease;
+  font-size: larger;
 }
 .heading:hover {
   box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.3);
@@ -57,7 +62,10 @@ body {
 i {
   color: rgb(251, 6, 6);
 }
-
+.quoteArea {
+  width: 90%;
+  text-align: center;
+}
 .quoteArea,
 span {
   color: black;
@@ -74,9 +82,11 @@ small {
   font-weight: bold;
   border: none;
   position: relative;
-  top: 70px;
+  top: 30px;
+
   box-shadow: -5px -5px;
   transition: all 300ms ease;
+  margin-bottom: 20px;
 }
 .btn:hover {
   box-shadow: 1px 1px;
@@ -88,4 +98,15 @@ small {
   box-shadow: 5px 5px;
   text-shadow: 5px 10px rgba(166, 18, 92, 0.9),
     -5px -10px rgba(40, 166, 18, 0.9);
+}
+.author-category {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 90%;
+  height: 20px;
+}
+.category {
+  /* font-style: italic; */
+  font-size: 12px;
 }
